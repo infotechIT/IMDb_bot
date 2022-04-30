@@ -11,7 +11,7 @@ import json
 import imdb
 import os
 PORT = int(os.environ.get('PORT', 5000))
-api_key= #Enter your Telegram bot token
+api_key= 5387082104:AAH8lcxwm-6wRwkhA8yGKUBUEA0C_pY8H-4
 ia = imdb.IMDb() 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 
 def start(update, context):
-    update.message.reply_text('Hi! \nWelcome to the *IMDb Bot*. \nSend me the name of any movie or TV show to get its details. \nHappy viewing! \n \nCreated by [Karan Malik](https://karan-malik.github.io)',parse_mode='markdown')
+    update.message.reply_text('Hi! \nWelcome to the *IMDB Bot*. \nSend me the name of any Movie or TV Show to get its details. \nHappy viewing! \n \nCreated by [InfoTech](https://infotechIT)',parse_mode='markdown')
 
 
 def help(update, context):
