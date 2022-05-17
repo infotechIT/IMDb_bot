@@ -11,7 +11,7 @@ import json
 import imdb
 import os
 PORT = int(os.environ.get('PORT', 5000))
-api_key= 5387082104:AAH8lcxwm-6wRwkhA8yGKUBUEA0C_pY8H-4
+api_key= 5129562762:AAGCoVj9x_ySy5p6ipWGsmCTMdjy8AFcwCI
 ia = imdb.IMDb() 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
