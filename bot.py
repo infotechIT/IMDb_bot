@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 
 def start(update, context):
-    update.message.reply_text('Hi! \nWelcome to the *IMDb Bot*. \nSend me the name of any Movie or TV Show to get its details. \nHappy viewing! \n \nCreated by [InfoTech](https://infotechIT)',parse_mode='markdown')
+    update.message.reply_text('Hi! \nWelcome to the *IMDb Bot*. \nSend me the name of any movie or TV show to get its details. \nHappy viewing! \n \nCreated by [InfoTech](https://t.me/infotechIT)',parse_mode='markdown')
 
 
 def help(update, context):
@@ -55,7 +55,7 @@ def reply(update, context):
 
 def main():
 
-    updater = Updater("5129562762:AAGCoVj9x_ySy5p6ipWGsmCTMdjy8AFcwCI", use_context=True)
+    updater = Updater("1476373283:AAHrdQE394_J8qd78J974y_AwVdwrsis1r0", use_context=True)
     dp = updater.dispatcher
     
     dp.add_handler(CommandHandler("start", start))
@@ -65,7 +65,7 @@ def main():
 
     #updater.start_webhook(listen="0.0.0.0",
     #                      port=int(PORT),
-    #                      url_path="5129562762:AAGCoVj9x_ySy5p6ipWGsmCTMdjy8AFcwCI")
+    #                      url_path="1476373283:AAHrdQE394_J8qd78J974y_AwVdwrsis1r0")
     #updater.bot.setWebhook('https://imdb-movie-bot.herokuapp.com/' + "1476373283:AAHrdQE394_J8qd78J974y_AwVdwrsis1r0")
     updater.start_polling()
     updater.idle()
